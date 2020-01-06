@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Refresh" content="5; url=https://www.youtube.com/playlist?list=PLjz9mQCWVCE_mSAC9VO_GIoocLb-2orEG"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMSW Morning Show</title>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <style>
+      * {
+        font-family: 'Lexend Deca', sans-serif;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+      body {
+        margin: 0;
+      }
+      h1 {
+        font-size: 3em;
+      }
+      div, h1 {
+        height: 100vh;
+ 	      width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+      }
+      div {
+        background-color: #000;
+        z-index: 10000;
+      }
+      span {
+        height: 100vh;
+        width: 0vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #F4D03F;
+        animation: preloader-bar 5s cubic-bezier(0.20,0.67,1,0.6) 0s forwards;
+      }
+      @keyframes preloader-bar {
+    	to {
+        width: 100vw;
+    	}
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span></span>
+      <h1>Taking you to the morning show...</h1>
+    </div>
+  </body>
+</html>
