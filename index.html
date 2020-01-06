@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="Refresh" content="2; url=https://www.youtube.com/playlist?list=PLjz9mQCWVCE_mSAC9VO_GIoocLb-2orEG"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMSW Morning Show</title>
     <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
@@ -30,6 +29,7 @@
         align-items: center;
         justify-content: center;
         color: #fff;
+        animation: preloader 500ms ease-in 2s forwards;
       }
       div {
         background-color: #000;
@@ -44,6 +44,22 @@
         background-color: #F4D03F;
         animation: preloader-bar 2s cubic-bezier(0.20,0.67,1,0.6) 0s forwards;
       }
+      iframe {
+      	height: 100vh;
+ 	      width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+      }
+      @keyframes preloader {
+    	to {
+        opacity: 0;
+        overflow: hidden;
+	      display: none;
+	      z-index: 1;
+    	}
+      }
       @keyframes preloader-bar {
     	to {
         width: 100vw;
@@ -56,5 +72,6 @@
       <span></span>
       <h1>Taking you to the morning show...</h1>
     </div>
+    <iframe src="https://www.youtube.com/embed/videoseries?list=PLjz9mQCWVCE_mSAC9VO_GIoocLb-2orEG" frameborder="0" allowfullscreen="true"></iframe>
   </body>
 </html>
